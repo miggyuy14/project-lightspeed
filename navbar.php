@@ -6,7 +6,7 @@
       <li><a href="#">Menu</a></li>
       <li><a href="#">Delivery</a></li>
       <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="contact-us.php">Contact Us</a></li>
       <li id="srch">
         <div class="search">
           <form action="get">
