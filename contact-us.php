@@ -17,7 +17,7 @@ $name = $email = $phone = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Clean input data
     $first_name = clean_input($_POST["first_name"]);
-    $last_name = clean_input($_POST["last _name"]);
+    $last_name = clean_input($_POST["last_name"]);
     $email = clean_input($_POST["email"]);
     $phone = clean_input($_POST["phone"]);
 

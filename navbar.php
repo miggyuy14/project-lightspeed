@@ -2,7 +2,7 @@
     <img class="logo" src="assets/foxy_s_kitchen-removebg.png" alt="FOXY'S KITCHEN">
     <div class="navigation">      
       <ul class="nav_links">
-      <li><a href="homepage.html" class="home">Home</a></li>
+      <li><a href="index.php" class="home">Home</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">Delivery</a></li>
       <li><a href="#">About Us</a></li>
