@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = clean_input($_POST["phone"]);
 
     // Insert the data into the database
-    $sql = "INSERT INTO contacts (first_name, last_name,email, phone) VALUES ('$name', '$email', '$phone')";
+    $sql = "INSERT INTO contact_info (first_name, last_name,email, phone) VALUES ('$name', '$email', '$phone')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Data submitted successfully!";
