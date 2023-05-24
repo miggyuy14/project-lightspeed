@@ -16,12 +16,13 @@ $name = $email = $phone = '';
 // Process the form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Clean input data
-    $name = clean_input($_POST["name"]);
+    $first_name = clean_input($_POST["first_name"]);
+    $last_name = clean_input($_POST["last _name"]);
     $email = clean_input($_POST["email"]);
     $phone = clean_input($_POST["phone"]);
 
     // Insert the data into the database
-    $sql = "INSERT INTO contacts (name, email, phone) VALUES ('$name', '$email', '$phone')";
+    $sql = "INSERT INTO contacts (first_name, last_name,email, phone) VALUES ('$name', '$email', '$phone')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Data submitted successfully!";
@@ -46,8 +47,11 @@ $conn->close();
 <h2>Contact Form</h2>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" required><br><br>
+    <label for="name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" required><br><br>
+
+    <label for="name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name" required><br><br>
 
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" required><br><br>
