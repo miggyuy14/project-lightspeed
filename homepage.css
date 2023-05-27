@@ -73,3 +73,9 @@ li a{
     margin-right: 15px;
     border-radius: 5px 5px 5px 5px;
 }
+
+.first{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}

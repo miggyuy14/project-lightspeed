@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="contact-us.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert the data into the database
     $sql = "INSERT INTO contact_info (first_name, last_name,email, contact_number) VALUES ('$first_name', '$last_name', '$email', '$phone')";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql) === TRUE) {  
         echo "Data submitted successfully!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
